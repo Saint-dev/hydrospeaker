@@ -1,0 +1,180 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #22272E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 20px;
+    border: 3px solid #22272E;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+}
+
+#main2 {
+    height: 100vh;
+}
+
+.main2 {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+
+nav h1 {
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    height: 60px;
+    background-color: #22272E;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu {
+
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    margin: 8px;
+    background-color: white;
+    width: 32px;
+    height: 2px;
+}
+
+.container {
+    gap: 50px;
+    margin-top: 130px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.textos {
+    text-align: center;
+}
+
+#btn1 {
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    font-size: 17px;
+    color: white;
+    border-radius: 60px;
+    border: none;
+    height: 60px;
+    width: 200px;
+    background-color: #007BFF;
+}
+
+#btn1.playing {
+    color: black;
+    background-color: #00BCD4;
+}
+
+footer {
+    color: white;
+    background-color: #22272E;
+    text-align: center;
+}
+
+.container {
+    height: 50vh;
+}
+
+@media screen and (max-width: 999px) {
+  
+
+
+    .nav-list {
+        background-color: #22272E;
+        height: 16vh;
+        width: 100vw;
+        right: 0;
+        top: 8vh;
+        position: absolute;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    #text1 {
+        font-size: 15px;
+    }
+
+
+
+    #main2 {
+        height: 150vh;
+
+    }
+
+    .lis1 {
+        padding-bottom: 1px;
+    }
+
+    .lis2 {
+
+
+        margin-right: 0px;
+    }
+
+}
